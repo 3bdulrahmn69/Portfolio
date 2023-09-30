@@ -1,0 +1,264 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/svg/land-light.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .id-card {
+    background: url(../assets/svg/card-light.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-300px);
+        -webkit-transform: translateX(-300px);
+        -moz-transform: translateX(-300px);
+        -ms-transform: translateX(-300px);
+        -o-transform: translateX(-300px);
+}
+}
+
+.landing .id-card::after {
+    content: '';
+    position: absolute;
+    top: 38%;
+    right: -40px;
+    height: 100px;
+    width: 450px;
+    background-color: #2048d9d1;
+    z-index: -1;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+}
+
+.landing .id-card .titles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.landing .id-card .titles .img-box img {
+    width: 200px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.landing .id-card .titles .name-box h1 {
+    padding: 10px 10px;
+    padding-left: 40px;
+    font-size: 3rem;
+    color: var(--light-color);
+    text-transform: uppercase;
+}
+
+.landing .id-card .titles .name-box h3 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    word-spacing: 7px;
+    padding: 5px 10px;
+    padding-left: 40px;
+    color: var(--light-color);
+}
+
+.landing .id-card .my-links {
+    font-size: 50px;
+    background-color: var(--light-color);
+}
+
+.landing .id-card .my-links a {
+    text-decoration: none;
+}
+
+.landing .id-card .my-links i {
+    color: var(--main-color);
+}
+
+.landing .id-card .my-links i:hover {
+    color: #2048d9d1;
+}
+
+@media (max-width: 320px) {
+    .landing .id-card {
+        width: 250px;
+        height: 370px;
+        background-position: right;
+    }
+    .landing .id-card::after  {
+        width: 250px;
+        height: 130px;
+        right: -10px;
+        top: 30%;
+    }
+    .landing .id-card .titles {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-top: 5px;
+        gap: 0;
+    }
+    .landing .id-card .titles .img-box img {
+        width: 100px;
+    }
+    .landing .id-card .titles .name-box h1 {
+        padding: 10px 15px;
+        font-size: 2.5rem;
+    }
+    .landing .id-card .titles .name-box h3 {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        word-spacing: 5px;
+    }
+    .landing .id-card .my-links {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px){
+    .landing .id-card {
+        width: 270px;
+        height: 370px;
+        background-position: right;
+    }
+    .landing .id-card::after  {
+        width: 270px;
+        height: 130px;
+        right: -10px;
+        top: 30%;
+    }
+    .landing .id-card .titles {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-top: 5px;
+        gap: 0;
+    }
+    .landing .id-card .titles .img-box img {
+        width: 100px;
+    }
+    .landing .id-card .titles .name-box h1 {
+        padding: 10px 15px;
+        font-size: 2.5rem;
+    }
+    .landing .id-card .titles .name-box h3 {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        word-spacing: 5px;
+    }
+    .landing .id-card .my-links {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 766px){
+    .landing .id-card {
+        width: 300px;
+        height: 370px;
+        background-position: right;
+    }
+    .landing .id-card::after  {
+        width: 300px;
+        height: 130px;
+        right: -10px;
+        top: 30%;
+    }
+    .landing .id-card .titles {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-top: 5px;
+        gap: 0;
+    }
+    .landing .id-card .titles .img-box img {
+        width: 100px;
+    }
+    .landing .id-card .titles .name-box h1 {
+        padding: 10px 15px;
+        font-size: 2.5rem;
+    }
+    .landing .id-card .titles .name-box h3 {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        word-spacing: 5px;
+    }
+    .landing .id-card .my-links {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px){
+    .landing .id-card {
+        width: 400px;
+        height: 370px;
+        background-position: right;
+    }
+    .landing .id-card::after  {
+        width: 400px;
+        height: 90px;
+        right: -10px;
+        top: 44%;
+    }
+    .landing .id-card .titles {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        margin-top: 5px;
+        gap: 0;
+    }
+    .landing .id-card .titles .img-box img {
+        width: 150px;
+    }
+    .landing .id-card .titles .name-box h1 {
+        padding-left: 20px;
+    }
+    .landing .id-card .titles .name-box h3 {
+        padding-left: 20px;
+    }
+    .landing .id-card .my-links {
+        padding: 0 12px;
+    }
+}
+
+@media (min-width: 901px) {
+    .landing .id-card::after {
+        border-radius: 10px 50px 50px 10px;
+        -webkit-border-radius: 10px 50px 50px 10px;
+        -moz-border-radius: 10px 50px 50px 10px;
+        -ms-border-radius: 10px 50px 50px 10px;
+        -o-border-radius: 10px 50px 50px 10px;
+    }
+}
