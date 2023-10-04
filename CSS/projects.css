@@ -206,6 +206,13 @@
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
     }
+    .projects .content .more:hover p {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); 
+    }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
@@ -230,6 +237,13 @@
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
+    }
+    .projects .content .more:hover p {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); 
     }
 }
 
@@ -256,6 +270,13 @@
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
     }
+    .projects .content .more:hover p {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); 
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -280,5 +301,12 @@
         -moz-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -o-transform: rotate(0deg);
+    }
+    .projects .content .more:hover p {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); 
     }
 }
