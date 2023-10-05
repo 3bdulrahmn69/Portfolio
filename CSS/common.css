@@ -3,6 +3,7 @@
 :root {
     --main-color: #2048D9;
     --light-color: #fff;
+    --dark-color: #000 ;
 }
 
 * {
@@ -15,6 +16,7 @@
 html {
     cursor: default;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 ul {
