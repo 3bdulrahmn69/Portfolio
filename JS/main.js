@@ -1,12 +1,7 @@
-let dark = localStorage.getItem('dark') === 'true' || false;
-
 let checkbox = document.getElementById("toggle");
-checkbox.checked = localStorage.getItem('box') === 'true' || false;
+checkbox.checked = JSON.parse(window.localStorage.getItem('dark')) || false;
 function applyStyling() {
     if (checkbox.checked) {
-        dark = true;
-    };
-    if (dark) {
         document.querySelector(".landing").style.cssText = 
         "background: url(assets/svg/land-dark.svg); background-size: cover; background-repeat: no-repeat; background-position: center;";
         
@@ -58,8 +53,6 @@ function applyStyling() {
 applyStyling();
 
 checkbox.addEventListener("change", function() {
-    dark = checkbox.checked;
-    localStorage.setItem('dark', dark);
-    localStorage.setItem('box', true);
+    window.localStorage.setItem('dark', checkbox.checked);
     applyStyling();
 });
