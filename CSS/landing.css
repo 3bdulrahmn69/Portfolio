@@ -8,6 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .landing .id-card {
@@ -32,6 +37,11 @@
     animation-name: slide;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 @keyframes slide {
@@ -98,6 +108,11 @@
 .landing .id-card .my-links {
     font-size: 50px;
     background-color: var(--light-color);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .landing .id-card .my-links a {
