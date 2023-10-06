@@ -53,6 +53,12 @@ function applyStyling() {
 applyStyling();
 
 checkbox.addEventListener("change", function() {
+<<<<<<< HEAD
     window.localStorage.setItem('dark', checkbox.checked);
+=======
+    dark = checkbox.checked;
+    localStorage.setItem('dark', dark);
+    localStorage.setItem('box', true);
+>>>>>>> 174bc387714fbbcffadb8aaa59187ea7c7bc82c4
     applyStyling();
 });
