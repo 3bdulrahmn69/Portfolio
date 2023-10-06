@@ -1,7 +1,7 @@
 let dark = localStorage.getItem('dark') === 'true' || false;
 
 let checkbox = document.getElementById("toggle");
-checkbox.checked = localStorage.getItem('dark') === 'true' || false;
+checkbox.checked = localStorage.getItem('box') === 'true' || false;
 function applyStyling() {
     if (checkbox.checked) {
         dark = true;
@@ -59,6 +59,7 @@ applyStyling();
 
 checkbox.addEventListener("change", function() {
     dark = checkbox.checked;
-    localStorage.setItem('dark', True);
+    localStorage.setItem('dark', dark);
+    localStorage.setItem('box', true);
     applyStyling();
 });
