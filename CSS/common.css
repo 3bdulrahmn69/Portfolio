@@ -32,7 +32,6 @@ a {
     align-items: center;
     font-size: 60px;
     font-weight: 200;
-    margin-bottom: 70px;
     padding: 10px;
 }
 
@@ -45,36 +44,17 @@ a {
     .container {
         width: 270px;
     }
-    .head-title {
-        padding-top: 50px;
-        margin-bottom: 50px;
-    }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
     .container {
         width: 320px;
     }
-    .head-title {
-        padding-top: 50px;
-        margin-bottom: 45px;
-    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
     .container {
         width: 480px;
-    }
-    .head-title {
-        padding-top: 45px;
-        margin-bottom: 45px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .head-title {
-        padding-top: 45px;
-        margin-bottom: 45px;
     }
 }
 

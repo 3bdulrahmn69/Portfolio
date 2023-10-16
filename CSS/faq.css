@@ -1,0 +1,149 @@
+.faq {
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.faq .head-title {
+    position: relative;
+    color: var(--main-color);
+}
+.faq .head-title::before {
+    content: "";
+    width: 10%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: var(--before-bg-color, #fff);
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.faq .head-title::after {
+    content: "";
+    width: 20%;
+    height: 10%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.faq .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.faq .content .clip {
+    width: 100%;
+    min-height: 40px;
+    margin-bottom: 5px;
+}
+
+.faq .content .clip .qu {
+    font-size: 25px;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    padding-right: 40px;
+    position: relative;
+    color: var(--light-color);
+}
+
+.faq .content .clip .qu .plus {
+    content: "+";
+    color: var(--light-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.faq .content .clip .answer {
+    font-size: 25px;
+    background-color: #5d79ddd1;
+    color: var(--light-color);
+    padding: 10px 15px;
+    display: none;
+    transition: 6s;
+    -webkit-transition: 6s;
+    -moz-transition: 6s;
+    -ms-transition: 6s;
+    -o-transition: 6s;
+    margin-top: 5px;
+}
+
+.faq .content .clip .answer a {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.faq .content .clip .answer a:hover {
+    color: var(--light-color);
+}
+
+@media (max-width: 320px) {
+    .faq .head-title::before {
+        width: 30%;
+        height: 10%;
+    }
+    .faq .head-title::after {
+        width: 50%;
+        height: 10%;
+    }
+    .faq .content .clip .qu, 
+    .faq .content .clip .answer {
+        font-size: 20px;
+    }
+    .faq .content .clip .qu .plus {
+        font-size: 20px;
+        right: 5px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .faq .head-title::before {
+        width: 30%;
+        height: 10%;
+    }
+    .faq .head-title::after {
+        width: 50%;
+        height: 10%;
+    }
+    .faq .content .clip .qu, 
+    .faq .content .clip .answer {
+        font-size: 20px;
+    }
+    .faq .content .clip .qu .plus {
+        font-size: 20px;
+        right: 5px;
+    }
+}

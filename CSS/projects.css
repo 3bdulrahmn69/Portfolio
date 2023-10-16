@@ -29,6 +29,7 @@
 .projects .content .p-card {
     background-color: var(--light-color);
     width: 600px;
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +44,7 @@
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    position: relative;
 }
 
 .projects .content .p-card .name {
@@ -56,11 +58,14 @@
     -moz-border-radius: 0 0 10px 10px;
     -ms-border-radius: 0 0 10px 10px;
     -o-border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 0;
 }
 
 .projects .content .p-card img {
     width: 95%;
     margin: 10px;
+    margin-top: 60px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -98,7 +103,12 @@
 }
 
 .projects .content .p-card .used-tech .list {
-    width: 100%;
+    width: 90%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .projects .content .p-card .used-tech .list ul{
@@ -112,6 +122,10 @@
     list-style: decimal;
     font-size: 15px;
     margin: 0 auto;
+}
+
+.projects .content .p-card .used-tech .list ul li {
+    font-size: 16px;
 }
 
 .projects .content .p-card .btn button {
@@ -138,7 +152,7 @@
 
 .projects .content .more {
     width: 100px;
-    height: 500px;
+    height: 570px;
     background-color: var(--light-color);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -206,6 +220,7 @@
 @media (max-width: 320px) {
     .projects .content .p-card {
         width: 280px;
+        height: auto;
     }
     .projects .content .p-card .name {
         font-size: 25px;
@@ -238,6 +253,7 @@
 @media (min-width: 321px) and (max-width: 480px) {
     .projects .content .p-card {
         width: 320px;
+        height: auto;
     }
     .projects .content .p-card .name {
         font-size: 25px;
@@ -270,6 +286,7 @@
 @media (min-width: 481px) and (max-width: 768px) {
     .projects .content .p-card {
         width: 480px;
+        height: auto;
     }
     .projects .content .p-card .name {
         font-size: 25px;
