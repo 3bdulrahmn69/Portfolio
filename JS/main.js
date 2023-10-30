@@ -79,17 +79,22 @@ let shapes = document.querySelectorAll(".shape");
 shapes.forEach(function (shape) {
     let progrev = shape.getAttribute("data-prog");
     let prog = shape.querySelector(".prog");
-    prog.style.width = progrev;
-    if (parseFloat(progrev) >= 95) {
-        prog.style.borderRadius = "50px 50px 50px 50px";
-    }
-    else {
-        prog.style.borderRadius = "50px 0 0 50px";
-    }
+
+    // Add mouseover event listener
+    shape.addEventListener("mouseover", function () {
+        // Change width on mouseover
+        prog.style.width = `${progrev}`;
+    });
+
+    // Add mouseout event listener
+    // shape.addEventListener("mouseout", function () {
+    //     // Reset width on mouseout
+    //     prog.style.width = "0%";
+    // });
 });
 /* End prog */
 
-/* Start down  */
+/* Start down FAQ */
 const plusIcons = document.querySelectorAll('.plus');
 plusIcons.forEach(function (plusIcon) {
     plusIcon.onclick = function () {
@@ -110,4 +115,4 @@ plusIcons.forEach(function (plusIcon) {
         ic.className = answer.style.display === 'block' ? 'fa-solid fa-angle-up ic' : 'fa-solid fa-angle-down ic';
     };
 });
-/* End down  */
+/* End down FAQ */
