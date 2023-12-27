@@ -25,15 +25,6 @@ function applyStyling() {
         
         document.querySelector(".projects .content .more ").style.cssText = 
         "background-color: var(--dark-color);";
-
-        document.querySelector(".faq").style.cssText = 
-        "background-color: var(--dark-color);";
-
-        const element = document.querySelector('.faq .head-title');
-        if (element) {
-            // Modify background color for ::before
-            element.style.setProperty('--before-bg-color', '#000');
-        }
     }else {
         document.querySelector(".landing").style.cssText = 
         "background: url(assets/svg/land-light.svg); background-size: cover; background-repeat: no-repeat; background-position: center;";
@@ -57,15 +48,6 @@ function applyStyling() {
         
         document.querySelector(".projects .content .more ").style.cssText = 
         "background-color: var(--light-color);";
-
-        document.querySelector(".faq").style.cssText = 
-        "background-color: var(--light-color);";
-
-        const element = document.querySelector('.faq .head-title');
-        if (element) {
-            // Modify background color for ::before
-            element.style.setProperty('--before-bg-color', '#fff');
-        }
     }
 };
 applyStyling();
